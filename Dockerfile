@@ -1,6 +1,7 @@
-From ubuntu
+From ubuntu:16.04
 
-RUN apt update -y && apt install apache2 -y
-# RUN apt install nginx -y
+RUN apt update -y && apt upgrade -y
+RUN apt install nginx -y
 
-CMD apachectl -D FORGROUND
+# CMD service nginx start
+CMD ["nginx", "-g", "daemon off;"]
