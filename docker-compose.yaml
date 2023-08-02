@@ -5,5 +5,5 @@ services:
     ports:
       - "1020:3000"
     env_file:
-      - .env
+      - ./apps/.env
     
