@@ -1,7 +1,8 @@
-From ubuntu:16.04
+FROM node
 
-RUN apt update -y && apt upgrade -y
-RUN apt install nginx -y
+WORKDIR /app
 
-# CMD service nginx start
-CMD ["nginx", "-g", "daemon off;"]
+ADD . /app
+RUN npm install
+CMD [ "npm start" ]
+EXPOSE 3000
