@@ -1,5 +1,7 @@
 FROM node
 
+MAINTAINER dyrizky
+
 WORKDIR /app
 
 ADD . /app

@@ -1,0 +1,9 @@
+
+services:     
+  ct-apps:
+    build: ./apps
+    ports:
+      - "1020:3000"
+    env_file:
+      - .env
+    
