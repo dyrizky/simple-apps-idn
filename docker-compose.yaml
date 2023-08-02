@@ -2,6 +2,7 @@
 services:     
   ct-apps:
     build: ./apps
+    restart: always
     ports:
       - "1020:3000"
     env_file:
