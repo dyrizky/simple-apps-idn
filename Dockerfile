@@ -1,6 +1,6 @@
-From ubuntu:16.04
+From ubuntu
 
-RUN apt update -y && apt upgrade -y
-RUN apt install nginx -y
+RUN apt update -y && apt install apache2 -y
+# RUN apt install nginx -y
 
-CMD service nginx start
+CMD apachectl -D FORGROUND
